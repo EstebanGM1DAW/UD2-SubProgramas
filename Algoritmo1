@@ -1,0 +1,50 @@
+SubProceso menu
+	Escribir '*****ELIGE UNA OPCIÓN DEL 1 AL 4*****'
+	Escribir '1. Mostrar Números del 1 al 10'
+	Escribir '2. Tabla de multiplicar del 8'
+	Escribir '3. Primeras 10 potencias del 2'
+	Escribir '4. SALIR'
+	Escribir "*************************************"
+FinSubProceso
+
+
+SubProceso MostrarNum
+	Para i <- 1 Hasta 10 Hacer
+		Escribir i
+	FinPara
+FinSubProceso
+
+
+SubProceso  tabladel8
+	Para i <- 1 Hasta 10 Hacer
+		Escribir "8 x " i  " = " 8 * i
+	FinPara
+FinSubProceso
+
+
+SubProceso potencias2
+	Para cont <- 1 Hasta 10 Hacer
+		Escribir "2 elevado a ", cont, " = ", 2^cont
+	FinPara
+FinSubProceso
+
+Algoritmo MenuOpciones
+    Definir opc Como Entero
+    opc = 0
+    Mientras opc <> 4  y opc < 4 Hacer
+        menu
+        Leer opc
+        
+        Si opc = 1 Entonces
+            MostrarNum
+        FinSi
+        
+        Si opc = 2 Entonces
+            tabladel8
+        FinSi
+        
+        Si opc = 3 Entonces
+            potencias2
+        FinSi
+    FinMientras
+FinAlgoritmo
