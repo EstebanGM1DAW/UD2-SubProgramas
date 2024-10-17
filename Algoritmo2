@@ -1,0 +1,13 @@
+Funcion pot <- Poten(expo,ele)
+	Definir pot Como Entero
+	pot = expo ^ ele
+FinFuncion
+
+Algoritmo sin_titulo
+	Escribir "Exponente: "
+	Leer num1
+	Escribir "Elevado a: "
+	Leer num2
+	resultado = Poten(num1,num2)
+	Escribir resultado
+FinAlgoritmo
