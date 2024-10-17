@@ -1,0 +1,43 @@
+Función euros <- ConversionMoneda(mon, tipo)
+Definir euros Como Real
+
+Según tipo Hacer
+1: 
+	euros = mon / 1.16
+2: 
+	euros = mon / 0.94
+3: 
+	euros = mon / 0.0064
+FinSegún
+
+FinFunción
+
+Algoritmo Monedas
+    Definir cantidad, resultado Como Real
+    Definir menu Como Entero
+    
+    Escribir "ELIGE QUE MONEDA QUIERES CONVERTIR A EUROS"
+    Escribir "1. LIBRAS"
+    Escribir "2. DÓLARES"
+    Escribir "3. YENES"
+    Leer menu
+    
+    Según menu Hacer
+1:
+	Escribir "¿Cuántas libras quieres pasar?"
+	Leer cantidad
+	resultado = ConversionMoneda(cantidad, 1)
+2:
+	Escribir "¿Cuántos dólares quieres pasar?"
+	Leer cantidad
+	resultado = ConversionMoneda(cantidad, 2)
+3:
+	Escribir "¿Cuántos yenes quieres pasar?"
+	Leer cantidad
+	resultado = ConversionMoneda(cantidad, 3)
+De Otro Modo:
+	Escribir "Opción no válida."
+FinSegún
+
+Escribir "El resultado en euros es: ", resultado
+FinAlgoritmo
