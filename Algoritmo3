@@ -1,0 +1,9 @@
+Funcion radioFun<- RadioCir(r)
+	radioFun= 3.1416* r ^2
+FinFuncion
+Algoritmo AreaCirculo
+	Escribir "Radio del circulo: "
+	leer radio
+	resultado = radioCir(radio)
+	Escribir trunc(resultado)
+FinAlgoritmo
